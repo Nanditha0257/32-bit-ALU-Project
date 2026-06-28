@@ -1,1 +1,46 @@
+`timescale 1ns/1ps
 
+module alu_32bit_tb_case;
+
+reg [31:0] a;
+reg [31:0] b;
+reg [2:0] f;
+wire [31:0] y;
+
+alu_32bit_case test2(
+    .y(y),
+    .a(a),
+    .b(b),
+    .f(f)
+);
+
+initial
+begin
+    a = 32'h00000000;
+    b = 32'hFFFFFFFF;
+
+    f = 3'b000;   // AND
+    #10;
+
+    f = 3'b001;   // OR
+    #10;
+
+    f = 3'b010;   // NOR
+    #10;
+
+    f = 3'b011;   // NAND
+    #10;
+
+    f = 3'b100;   // ADD
+    #10;
+
+    f = 3'b101;   // SUB
+    #10;
+
+    f = 3'b110;   // MUL
+    #10;
+
+    $finish;
+end
+
+endmodule
