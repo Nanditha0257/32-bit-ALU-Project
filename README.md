@@ -1,5 +1,4 @@
-# 32-bit-ALU-Project
-# 32-bit ALU using Verilog
+# 32-bit ALU Project using Verilog
 
 ## Overview
 This project implements a 32-bit Arithmetic Logic Unit (ALU) using Verilog HDL and verifies its functionality using a testbench in ModelSim.
