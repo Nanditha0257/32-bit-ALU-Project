@@ -32,4 +32,4 @@ Simulation completed successfully and all operations were verified using the wav
 ## Author
 
 Nanditha
-ECE Student
+
